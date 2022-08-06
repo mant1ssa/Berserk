@@ -8,6 +8,8 @@
     text-align: center;
     align-items: center;
     position: relative;
+    min-height: 600px;
+    padding: 100px 0;
 }
 .section-top::before{
     content: '';
@@ -31,4 +33,17 @@
 }
 .section-top__title{
     font-size: 40px;
+}
+@media(max-width: 576px){
+    .section-top__info{
+        font-size: 15px;
+    }
+    .section-top__title{
+        font-size: 30px;
+    }
+}
+@media(max-width: 296px){
+    .section-top__title{
+        font-size: 24px;
+    }
 }
