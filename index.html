@@ -29,10 +29,10 @@
                 <div class="header-page__nav">
                     <ul class="header-page__ul">
                         <li class="header-page__li">
-                            <a href="#" class="header-page__link">Войти</a>
+                            <a href="#" class="header-page__link" data-popup-sign>Войти</a>
                         </li>
                         <li class="header-page__li">
-                            <a href="#" class="header-page__link">Разработчики</a>
+                            <a href="#" class="header-page__link" data-popup-dev>Разработчики</a>
                         </li>
                         <li class="header-page__li">
                             <a href="#" class="header-page__link">Контакты</a>
@@ -167,11 +167,11 @@
 
     <!-- popup menu START -->
 
-    <div class="popup popup-menu">
+    <div class="popup popup-menu" data-popDev>
         <div class="popup__wrapper">
             <div class="popup__inner">
                 <div class="popup__content popup__content--centered">
-                    <button class="btn-close popup__btn-close">&#10006</button>
+                    <button class="btn-close popup__btn-close" data-popDev-close>&#10006</button>
                     <h3 class="popup__h3">Мои соц. сети</h3>
                     <div class="popup__socials">
                         <ul class="popup__socials-list">
@@ -193,11 +193,11 @@
     <!-- popup menu END -->
 
     <!-- popup sign START -->
-    <div class="popup popup-sign is-active">
+    <div class="popup popup-sign" data-popSign>
         <div class="popup__wrapper">
             <div class="popup__inner">
                 <div class="popup__content popup__content--centered">
-                    <button class="btn-close popup__btn-close">&#10006</button>
+                    <button class="btn-close popup__btn-close" data-popSign-close>&#10006</button>
                     <h3 class="popup__h3">Зарегестрироваться</h3>
                     <div class="order">
                         <img src="img/section-catalog/gars.jpg" alt="Some img" class="popup__img">
@@ -212,6 +212,9 @@
         </div>
     </div>
     <!-- popup sign END -->
+
+    <script src="js/header.js"></script>
+    <script src="js/popup.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 .header-page{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,6 +44,11 @@
 .header-page__link:hover{
     transform: scale(1.1);
     color: rgb(153, 42, 42);
+}
+
+.header-page.is-active .header-page__link{
+padding-top: 100px;
+padding-top: 0;
 }
 
 @media(max-width:900px){
