@@ -163,6 +163,7 @@
 @media(max-width:424px){
     .popup__content{
         height: 450px;
+        margin: 0 auto;
     }
     .popup__h3{
         margin-bottom: 50px;
