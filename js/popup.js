@@ -6,9 +6,13 @@ var closePopup = function(target){
 }
 
 const body = document.querySelector('body');
+
+
 var toggleScroll = function(){
     body.classList.toggle('no-scroll');
 }
+
+
 const popup_Open = document.querySelector('[data-popup-dev]');    // кнопка разработчики
 const popup_dev_open = document.querySelector('[data-popDev]');   // сам попап
 const popup_dev_close = document.querySelector('[data-popDev-close]');
@@ -27,6 +31,7 @@ popup_dev_close.addEventListener('click', function(e){
     e.preventDefault();
 
     closePopup(popup_dev_open);
+    toggleScroll();
 })
 
 popup_Sign.addEventListener('click', function(e){
@@ -39,6 +44,7 @@ popup_sign_close.addEventListener('click', function(e){
     e.preventDefault();
 
     closePopup(popup_sign_open);
+    toggleScroll();
 })
 
 

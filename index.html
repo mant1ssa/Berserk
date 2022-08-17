@@ -35,7 +35,7 @@
                             <a href="#" class="header-page__link" data-popup-dev>Разработчики</a>
                         </li>
                         <li class="header-page__li">
-                            <a href="#" class="header-page__link">Контакты</a>
+                            <a href="#section-menu" class="header-page__link" data-scroll-to = "section-about">О проекте</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
             <p class="section-top__info">Ural's project</p>
             <h1 class="section-top__title">Berserk universe</h1>
             <div class="section-top__btn">
-                <button class="btn" type="button">Choose heroes</button>
+                <button class="btn" type="button" data-scroll-to = "section-catalog">Choose heroes</button>
             </div>
         </div>
     </section>
@@ -61,23 +61,23 @@
                 <nav class="catalog-nav">
                     <ul class="catalog-nav__wrapper">
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn is-active" type="button">Все</button>
+                            <button class="catalog-nav__btn is-active" type="button" data-filter="all">Все</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button">Гатс</button>
+                            <button class="catalog-nav__btn" type="button" data-filter="Guts">Гатс</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button">Грифит</button>
+                            <button class="catalog-nav__btn" type="button" data-filter="Griffit">Грифит</button>
                         </li>
                         <li class="catalog-nav__item">
-                            <button class="catalog-nav__btn" type="button">Аска</button>
+                            <button class="catalog-nav__btn" type="button" data-filter="Kaska">Каска</button>
                         </li>
                     </ul>
                 </nav>
             </header>
 
             <div class="catalog">
-                <div class="catalog__item">
+                <div class="catalog__item" data-category="Guts">
                     <div class="catalog__hero">
                         <img src="img/section-heroes/gats.jpg" alt="" class="hero__img">
                         <div class="hero__content">
@@ -100,7 +100,7 @@
                         </footer>
                     </div>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-category="Griffit">
                     <div class="catalog__hero">
                         <img src="img/section-heroes/grifit.jpg" alt="" class="hero__img">
                         <div class="hero__content">
@@ -123,11 +123,11 @@
                         </footer>
                     </div>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-category="Kaska">
                     <div class="catalog__hero">
                         <img src="img/section-heroes/kaska.jpg" alt="" class="hero__img">
                         <div class="hero__content">
-                            <h3 class="hero__title">Aska</h3>
+                            <h3 class="hero__title">Kaska</h3>
                             <p class="hero__description">Griffit's right hand</p>
                         </div>
                         <footer class="hero__footer">
@@ -153,7 +153,7 @@
 
     <!-- Section about START -->
 
-    <section class="section section-about">
+    <section class="section section-about" id="section-menu">
         <img src="img/section-about/asap.jpg" alt="" class="section-about__img">
         <div class="section-about__container">
             <div class="section-about__content">
@@ -215,6 +215,9 @@
 
     <script src="js/header.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/scrollTo.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/product.js"></script>
 
 </body>
 </html>
